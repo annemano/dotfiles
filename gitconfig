@@ -12,6 +12,7 @@
 [core]
   pager = less -FRSX
 	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+	excludesfile = /Users/annemano/.gitignore
 
 [alias]
   co = checkout
@@ -37,6 +38,7 @@
 
   # Removes a file from the index
   unstage = reset HEAD --
+	graph = log --oneline --graph
 
 [help]
   autocorrect = 1
@@ -50,5 +52,17 @@
 [pull]
   rebase = false
 [user]
-	email = anne.ma@gmail.com
+	email = anne-marie@kumojin.com
 	name = Anne-Marie Nault
+  signingkey=DB508DC1BABDF1BA
+
+[commit]
+  gpgsign=true
+
+[includeIf "gitdir:~/code/beneva/"]
+  path = .gitconfig-beneva
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

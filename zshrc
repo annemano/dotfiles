@@ -61,3 +61,13 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+# Umanize setup
+export CGO_CFLAGS_ALLOW="-Xpreprocessor"
+
+# GFI setup
+export GFI_SERVER_POSTGRES_DATABASE_NAME="spe"
+export GFI_SERVER_POSTGRES_DATABASE_USER="spe"
+export GFI_SERVER_POSTGRES_DATABASE_PASSWORD="spe"
+export GOPROXY=""
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
